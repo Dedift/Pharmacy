@@ -1,0 +1,21 @@
+package ru.aston.pharmacy.domain.medicine;
+
+import jakarta.persistence.Entity;
+import lombok.*;
+
+/**
+ * Represents a cream medicine, which is a specific type of medicine.
+ * Inherits from the abstract class Medicine and adds a volume field.
+ */
+@Setter
+@Getter
+@ToString
+@EqualsAndHashCode(callSuper = true)
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+public class Cream extends Medicine{
+
+    private Integer volume;
+}
