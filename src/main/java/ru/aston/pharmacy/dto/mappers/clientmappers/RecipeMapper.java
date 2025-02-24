@@ -11,4 +11,6 @@ import java.util.List;
 public interface RecipeMapper {
     RecipeDTO toRecipeDTO(Recipe recipe);
     List<RecipeDTO> toRecipeDTOList(List<Recipe> recipes);
+    Recipe toRecipe(RecipeDTO recipeDTO);
+    List<Recipe> toRecipeList(List<RecipeDTO> recipeDTOs);
 }

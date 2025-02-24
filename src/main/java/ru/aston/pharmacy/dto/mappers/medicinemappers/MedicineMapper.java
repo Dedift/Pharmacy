@@ -11,4 +11,6 @@ import java.util.List;
 public interface MedicineMapper {
     MedicineDTO toMedicineDTO(Medicine medicine);
     List<MedicineDTO> toMedicineDTOList(List<Medicine> medicines);
+    Medicine toMedicine(MedicineDTO medicineDTO);
+    List<Medicine> toMedicineList(List<MedicineDTO> medicineDTOs);
 }

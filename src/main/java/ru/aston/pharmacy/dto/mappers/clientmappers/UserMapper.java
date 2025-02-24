@@ -11,4 +11,6 @@ import java.util.List;
 public interface UserMapper {
     UserDTO mapToUserDTO(User user);
     List<UserDTO> mapToUserDTOList(List<User> users);
+    User toUser(UserDTO userDTO);
+    List<User> toUserList(List<UserDTO> userDTOs);
 }

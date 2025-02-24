@@ -9,5 +9,7 @@ import java.util.List;
 @Mapper(uses = MedicineMapper.class)
 public interface PillsMapper {
     PillsDTO toPillsDTO(Pills pills);
-    List<Pills> toPillsDTOList(List<Pills> pills);
+    List<PillsDTO> toPillsDTOList(List<Pills> pills);
+    Pills toPills(PillsDTO pillsDTO);
+    List<Pills> toPillsList(List<PillsDTO> pillsDTOs);
 }
