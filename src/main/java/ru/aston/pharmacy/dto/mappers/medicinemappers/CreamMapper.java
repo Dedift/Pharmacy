@@ -10,4 +10,6 @@ import java.util.List;
 public interface CreamMapper {
     CreamDTO toCreamDTO(Cream cream);
     List<CreamDTO> toCreamDTOList(List<Cream> creams);
+    Cream creamDTOToCream(CreamDTO creamDTO);
+    List<Cream> creamDTOToCreamList(List<CreamDTO> creamDTOs);
 }

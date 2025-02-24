@@ -10,4 +10,6 @@ import java.util.List;
 public interface PowderMapper {
     PowderDTO toPowderDTO(Powder powder);
     List<PowderDTO> toPowderDTOList(List<Powder> powders);
+    Powder toPowder(PowderDTO powderDTO);
+    List<Powder> toPowderList(List<PowderDTO> powderDTOs);
 }

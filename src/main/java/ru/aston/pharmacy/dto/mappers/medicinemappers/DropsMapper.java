@@ -10,4 +10,6 @@ import java.util.List;
 public interface DropsMapper {
     DropsDTO toDropsDTO(Drops drops);
     List<DropsDTO> toDropsDTOList(List<Drops> drops);
+    Drops toDrops(DropsDTO dropsDTO);
+    List<Drops> toDropsList(List<DropsDTO> dropsDTOS);
 }

@@ -11,5 +11,7 @@ import java.util.List;
 public interface OrderMapper {
     OrderDTO orderDto(Order order);
     List<OrderDTO> mapTpOrderDtoList(List<Order> orders);
+    Order toOrder(OrderDTO orderDTO);
+    List<Order> toOrderList(List<OrderDTO> orderDTOs);
 }
 
