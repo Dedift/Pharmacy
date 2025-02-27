@@ -9,8 +9,8 @@ import java.util.List;
 
 @Mapper(uses = BaseMapper.class)
 public interface OrderMapper {
-    OrderDTO orderDto(Order order);
-    List<OrderDTO> mapTpOrderDtoList(List<Order> orders);
+    OrderDTO toOrderDTO(Order order);
+    List<OrderDTO> toOrderDTOList(List<Order> orders);
     Order toOrder(OrderDTO orderDTO);
     List<Order> toOrderList(List<OrderDTO> orderDTOs);
 }
